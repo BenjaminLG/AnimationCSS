@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+body {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: radial-gradient(circle, #ffffff 5%, #83f7f5 45%, #7391e2 95%);
+    font-size: 16px;
+}
+
+h1{
+  font-size: 3em;
+  color:rgb(47, 43, 43) ;
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+span{
+  color: #ac34e8;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 200px;
+}
+
+li {
+    list-style: none;
+    margin: 10px 50px;
+}
+
+#twitter {
+    position: relative;
+    animation: spiral 3s ease-in-out infinite;
+}
+@keyframes spiral {
+    0% {
+        transform: rotate(0deg) translateY(300px);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+#heart {
+    position: relative;
+    animation: movetop 3s ease infinite;
+}
+@keyframes movetop {
+    from {top: 400px;}
+    to {top: 0px;}
+  }
+
+#msg {
+    position: relative;
+    animation: movedown 2.4s ease infinite;
+}
+@keyframes movedown {
+    from {top: 0px;}
+    to {top: 350px;}
+  }
+
+#dollard {
+    animation: zoom-in 4s ease infinite;
+}
+@keyframes zoom-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1.5, 1.5);
+    }
+  }
+
+#letter {
+    position: relative;
+    animation: rigth-left 0.5s ease infinite;
+}
+@keyframes rigth-left {
+    from {right: 0px;}
+    to {right: -10px}
+  }
+
+  #twitch {
+    position: relative;
+    animation: movedown-top 2.5s ease infinite;
+  }
+ @keyframes movedown-top {
+    /* from {top: -200px;}
+    to {top: 0px} */
+      0% {
+        transform: translateY(-200px);
+    }
+      50% {
+        transform: translateX(80px);
+      }
+    100% {
+
+        transform: translateY(0) ;
+    }
+  } 
+  
